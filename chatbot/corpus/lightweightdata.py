@@ -55,7 +55,6 @@ class LightweightData:
             fileName (str): file to load
         """
 
-        import os
         print os.getcwd()
 
         linesBuffer = []
