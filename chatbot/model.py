@@ -157,6 +157,7 @@ class Model:
 
         # Network input (placeholders)
 
+        # main model!
         with tf.name_scope('placeholder_encoder'):
             self.encoderInputs  = [tf.placeholder(tf.int32,   [None, ]) for _ in range(self.args.maxLengthEnco)]  # Batch size * sequence length * input dim
 
