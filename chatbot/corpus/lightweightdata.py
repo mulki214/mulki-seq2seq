@@ -47,14 +47,16 @@ class LightweightData:
         """
         self.CONVERSATION_SEP = "==="
         self.conversations = []
-        # self.loadLines(lightweightFile + '.txt')
-        self.loadLines('data/lightweight/train_test.txt')
+        self.loadLines(lightweightFile + '.txt')
 
     def loadLines(self, fileName):
         """
         Args:
             fileName (str): file to load
         """
+
+        import os
+        print os.getcwd()
 
         linesBuffer = []
         with open(fileName, 'r') as f:
