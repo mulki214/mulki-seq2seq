@@ -71,7 +71,7 @@ class Chatbot:
         self.MODEL_EXT = '.ckpt'
         self.CONFIG_FILENAME = 'params.ini'
         self.CONFIG_VERSION = '0.5'
-        self.TEST_IN_NAME = 'data' + os.sep + 'test' + os.sep + 'samples-v2.txt'
+        self.TEST_IN_NAME = 'data' + os.sep + 'test' + os.sep + 'samples-v.txt'
         self.TEST_OUT_SUFFIX = '_predictions.txt'
         self.SENTENCES_PREFIX = ['Q: ', 'A: ']
 
@@ -128,7 +128,7 @@ class Chatbot:
 
         # Training options
         trainingArgs = parser.add_argument_group('Training options')
-        trainingArgs.add_argument('----', type=int, default=30, help='maximum number of epochs to run')
+        trainingArgs.add_argument('--numEpochs', type=int, default=30, help='maximum number of epochs to run')
         trainingArgs.add_argument('--saveEvery', type=int, default=2000, help='nb of mini-batch step before creating a model checkpoint')
         trainingArgs.add_argument('--batchSize', type=int, default=256, help='mini-batch size')
         trainingArgs.add_argument('--learningRate', type=float, default=0.002, help='Learning rate')
