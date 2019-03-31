@@ -47,7 +47,8 @@ class LightweightData:
         """
         self.CONVERSATION_SEP = "==="
         self.conversations = []
-        self.loadLines(lightweightFile + '.txt')
+        # self.loadLines(lightweightFile + '.txt')
+        self.loadLines('data/lightweight/train_test.txt')
 
     def loadLines(self, fileName):
         """

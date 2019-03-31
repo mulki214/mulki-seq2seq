@@ -71,7 +71,7 @@ class Chatbot:
         self.MODEL_EXT = '.ckpt'
         self.CONFIG_FILENAME = 'params.ini'
         self.CONFIG_VERSION = '0.5'
-        self.TEST_IN_NAME = 'data' + os.sep + 'test' + os.sep + 'samples-v.txt'
+        self.TEST_IN_NAME = 'data' + os.sep + 'test' + os.sep + 'samples-v2.txt'
         self.TEST_OUT_SUFFIX = '_predictions.txt'
         self.SENTENCES_PREFIX = ['Q: ', 'A: ']
 
